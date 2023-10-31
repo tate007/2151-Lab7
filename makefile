@@ -6,5 +6,5 @@ compile:
 run:
 	java cpsc2150.listDec.ShuffleApp
 
-clean: compile
-	rm cpsc2150/listDec/*.class
+clean:
+	rm -f cpsc2150/listDec/*.class
