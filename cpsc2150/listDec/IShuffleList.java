@@ -3,6 +3,22 @@ package cpsc2150.listDec;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * List that can be shuffled and swapped
+ *
+ * Initialization ensures:
+ *              the list is empty
+ *              the list is not null
+ *              the list has a size of 0
+ *
+ * Defines:
+ *             size: Z
+ *             self: T
+ * Constraints:
+ *            0 <= size
+ *            self != null
+ *
+ */
 public interface IShuffleList<T> extends List<T> {
     /**
      * Swaps random indexes of the list swaps times
