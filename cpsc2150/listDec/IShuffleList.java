@@ -8,13 +8,12 @@ import java.util.Random;
  *
  * Initialization ensures:
  *              the list is not null
- *
  * Defines:
  *             size: Z
+ *             self: List<T>
  * Constraints:
  *            0 <= size
  *            self != null
- *
  */
 public interface IShuffleList<T> extends List<T> {
     /**
@@ -47,8 +46,8 @@ public interface IShuffleList<T> extends List<T> {
      *      0 <= i < |self| AND
      *      0 <= j < |self|
      * @post
-     *      self[i] = #self[j] AND
-     *      self[j] = #self[i] AND
+     *      self.get(i) = #self.get(j) AND
+     *      self.get(j) = #self.get(i) AND
      *      |#self| = |self|
      */
     default void swap(int i, int j) {
