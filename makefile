@@ -1,7 +1,7 @@
 default: compile
 
 compile:
-	javac cpsc2150/listDec/*.java
+	javac -sourcepath . cpsc2150/listDec/ShuffleApp.java
 
 run:
 	java cpsc2150.listDec.ShuffleApp
