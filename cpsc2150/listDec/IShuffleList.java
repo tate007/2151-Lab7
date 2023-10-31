@@ -11,7 +11,6 @@ import java.util.Random;
  *
  * Defines:
  *             size: Z
- *             self: T
  * Constraints:
  *            0 <= size
  *            self != null
