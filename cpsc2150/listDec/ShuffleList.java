@@ -1,5 +1,7 @@
 package cpsc2150.listDec;
 
+import cpsc2150.listDec.cpsc2150.listDec.IShuffleList;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
