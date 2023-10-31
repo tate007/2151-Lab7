@@ -4,6 +4,17 @@ import java.util.List;
 import java.util.Random;
 
 public interface IShuffleList<T> extends List<T> {
+    /**
+     * Swaps random indexes of the list swaps times
+     *
+     * @param swaps The number of swaps to make
+     *
+     * @pre
+     *      swaps >= 0
+     * @post
+     *      [Random indexes have been swapped swaps times] AND
+     *      |#self| = |self|
+     */
     default void shuffle(int swaps) {
         Random rand = new Random();
         for (int i = 0; i < swaps; i++) {
@@ -13,6 +24,18 @@ public interface IShuffleList<T> extends List<T> {
         }
     }
 
+    /**
+     * Swaps index i with index j in the list
+     *
+     * @param i the index of the element to swap with index j
+     * @param j the index of the element to swap with index i
+     *
+     * @pre
+     *      0 <= i < |self| AND
+     *      0 <= j < |self|
+     * @post
+     *      |#self| = |self| AND 
+     */
     default void swap(int i, int j) {
         T temp = get(i);
         set(i, get(j));
