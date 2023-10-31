@@ -34,7 +34,9 @@ public interface IShuffleList<T> extends List<T> {
      *      0 <= i < |self| AND
      *      0 <= j < |self|
      * @post
-     *      |#self| = |self| AND 
+     *      self[i] = #self[j] AND
+     *      self[j] = #self[i] AND
+     *      |#self| = |self|
      */
     default void swap(int i, int j) {
         T temp = get(i);
