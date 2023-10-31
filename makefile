@@ -1,4 +1,4 @@
-default: compile
+default: compile,
 
 compile:
 	javac cpsc2150/listDec/*.java
